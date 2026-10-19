@@ -156,8 +156,10 @@
               <div class="absolute inset-0 flex flex-col items-center justify-center">
                 <div class="relative">
                   <span class="absolute inset-0 animate-pulseRing rounded-full bg-amber-400/40"></span>
-                  <div class="relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-orange-600 text-3xl font-black text-slate-950 ring-4 ring-slate-900 sm:h-28 sm:w-28">
-                    JD
+                  <div class="relative h-24 w-24 overflow-hidden rounded-full bg-slate-800 ring-4 ring-amber-400/80 sm:h-28 sm:w-28">
+                    <!-- Foto provisória (recorte do perfil): object-position/scale escondem a borda branca do print -->
+                    <img src="assets/jose-duran.png" alt="Foto de José Durán, professor de espanhol"
+                         class="h-full w-full scale-[1.22] object-cover" style="object-position: 50% 79%;" />
                   </div>
                 </div>
                 <p class="mt-4 text-base font-bold text-white">José Durán</p>
