@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Durán | Aulas de Espanhol ao Vivo</title>
+  <meta name="description" content="Aulas de espanhol ao vivo com José Durán, professor e psicanalista. Conversação desde o primeiro dia, foco em situações reais e abordagem personalizada." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          keyframes: {
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-8px)' } },
+            pulseRing: { '0%': { transform: 'scale(1)', opacity: '0.6' }, '100%': { transform: 'scale(1.6)', opacity: '0' } },
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            pulseRing: 'pulseRing 1.8s ease-out infinite',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Fonte Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+  <style>
+    body { -webkit-font-smoothing: antialiased; }
+    .grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(148,163,184,0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(148,163,184,0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 font-sans text-slate-100 selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-800/60 bg-slate-950/70 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#" class="flex items-center gap-2.5">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 text-sm font-black text-slate-950">JD</span>
+        <span class="leading-tight">
+          <span class="block text-sm font-bold text-white">José Durán</span>
+          <span class="block text-[11px] font-medium uppercase tracking-wider text-slate-400">Clases de Español</span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+        <a href="#metodologia" class="transition hover:text-amber-400">Metodologia</a>
+        <a href="#para-quem" class="transition hover:text-amber-400">Para quem é</a>
+        <a href="#como-funciona" class="transition hover:text-amber-400">Como funciona</a>
+      </div>
+
+      <a href="#" data-whatsapp
+         class="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-slate-950 transition hover:bg-amber-300">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="hidden sm:inline">Fale comigo</span>
+        <span class="sm:hidden">WhatsApp</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="relative overflow-hidden pt-28 pb-20 sm:pt-32 lg:pt-40 lg:pb-28">
+      <!-- Fundo decorativo -->
+      <div class="grid-bg pointer-events-none absolute inset-0"></div>
+      <div class="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-amber-500/20 blur-[120px] lg:left-1/4"></div>
+      <div class="pointer-events-none absolute top-40 right-0 h-[380px] w-[380px] rounded-full bg-orange-600/15 blur-[120px]"></div>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
+        <!-- Texto -->
+        <div class="text-center lg:text-left">
+          <span class="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-semibold text-amber-300 backdrop-blur-md sm:text-sm">
+            <span class="relative flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-amber-400"></span>
+            </span>
+            🇪🇸 Domine o Espanhol Fluente com Aulas Ao Vivo
+          </span>
+
+          <h1 class="mt-6 text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Fale Espanhol com
+            <span class="text-amber-400">Confiança e Fluência Natural</span>
+            <span class="mt-3 block text-2xl font-bold text-slate-400 sm:text-3xl lg:text-[2rem]">— sem decorar regras cansativas.</span>
+          </h1>
+
+          <p class="mx-auto mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg lg:mx-0">
+            Aulas dinâmicas e interativas ao vivo com <strong class="font-semibold text-white">José Durán</strong>,
+            personalizadas para o seu objetivo profissional ou pessoal.
+          </p>
+
+          <div class="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
+            <a href="#" data-whatsapp
+               class="group relative inline-flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 px-7 py-4 text-base font-bold text-slate-950 shadow-[0_10px_40px_-10px_rgba(245,158,11,0.7)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_50px_-10px_rgba(245,158,11,0.9)]">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Garantir Minha Vaga no WhatsApp
+            </a>
+            <a href="#metodologia"
+               class="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-700 bg-slate-900/60 px-7 py-4 text-base font-semibold text-slate-200 backdrop-blur-md transition hover:border-amber-400/50 hover:text-white">
+              Conhecer a Metodologia
+              <i data-lucide="arrow-down" class="h-4 w-4"></i>
+            </a>
+          </div>
+
+          <!-- Selos de confiança -->
+          <ul class="mt-10 grid grid-cols-1 gap-3 text-sm font-medium text-slate-300 sm:grid-cols-3 sm:gap-4">
+            <li class="flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-900/50 px-3 py-2.5 backdrop-blur-md lg:justify-start">
+              <i data-lucide="video" class="h-4 w-4 shrink-0 text-amber-400"></i> Aulas 100% Ao Vivo
+            </li>
+            <li class="flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-900/50 px-3 py-2.5 backdrop-blur-md lg:justify-start">
+              <i data-lucide="book-open" class="h-4 w-4 shrink-0 text-amber-400"></i> Material Incluso
+            </li>
+            <li class="flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-900/50 px-3 py-2.5 backdrop-blur-md lg:justify-start">
+              <i data-lucide="user-check" class="h-4 w-4 shrink-0 text-amber-400"></i> Atendimento Individual
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mockup de videochamada -->
+        <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
+          <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-amber-500/20 via-transparent to-orange-500/20 blur-2xl"></div>
+
+          <div class="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-black/50 backdrop-blur-md">
+            <!-- Barra da janela -->
+            <div class="flex items-center justify-between border-b border-slate-800 px-4 py-3">
+              <div class="flex items-center gap-1.5">
+                <span class="h-3 w-3 rounded-full bg-red-500/80"></span>
+                <span class="h-3 w-3 rounded-full bg-yellow-400/80"></span>
+                <span class="h-3 w-3 rounded-full bg-green-500/80"></span>
+              </div>
+              <span class="truncate px-2 text-xs font-medium text-slate-400">Clase de Español · José Durán</span>
+              <span class="flex items-center gap-1.5 rounded-md bg-red-500/15 px-2 py-0.5 text-[11px] font-bold text-red-400">
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-red-500"></span> AO VIVO
+              </span>
+            </div>
+
+            <!-- Tela principal -->
+            <div class="relative aspect-[4/3] bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 sm:aspect-video">
+              <!-- Professor -->
+              <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <div class="relative">
+                  <span class="absolute inset-0 animate-pulseRing rounded-full bg-amber-400/40"></span>
+                  <div class="relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-orange-600 text-3xl font-black text-slate-950 ring-4 ring-slate-900 sm:h-28 sm:w-28">
+                    JD
+                  </div>
+                </div>
+                <p class="mt-4 text-base font-bold text-white">José Durán</p>
+                <p class="text-xs text-slate-400">Professor de Espanhol · Psicanalista</p>
+              </div>
+
+              <!-- Balão de fala -->
+              <div class="absolute left-3 top-3 max-w-[60%] animate-float rounded-2xl rounded-tl-sm border border-slate-700/60 bg-slate-950/70 px-3 py-2 text-xs text-slate-200 backdrop-blur-md sm:left-5 sm:top-5 sm:text-sm">
+                <span class="font-semibold text-amber-300">José:</span> ¡Hola! ¿Cómo te fue el fin de semana? 😄
+              </div>
+
+              <!-- Miniaturas de alunos -->
+              <div class="absolute bottom-3 right-3 flex gap-2 sm:bottom-5 sm:right-5">
+                <div class="flex h-14 w-20 flex-col items-center justify-center rounded-xl border border-slate-700 bg-slate-800/90 backdrop-blur sm:h-16 sm:w-24">
+                  <span class="flex h-7 w-7 items-center justify-center rounded-full bg-sky-500/80 text-[11px] font-bold">AM</span>
+                  <span class="mt-1 text-[10px] text-slate-400">Ana</span>
+                </div>
+                <div class="flex h-14 w-20 flex-col items-center justify-center rounded-xl border-2 border-green-500/70 bg-slate-800/90 backdrop-blur sm:h-16 sm:w-24">
+                  <span class="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/80 text-[11px] font-bold">RL</span>
+                  <span class="mt-1 flex items-center gap-1 text-[10px] text-green-400"><i data-lucide="mic" class="h-2.5 w-2.5"></i>Rafael</span>
+                </div>
+              </div>
+
+              <!-- Legenda ao vivo -->
+              <div class="absolute bottom-3 left-3 hidden rounded-lg bg-black/60 px-3 py-1.5 text-xs text-slate-200 backdrop-blur sm:bottom-5 sm:left-5 sm:block">
+                <span class="text-green-400">Rafael:</span> ¡Muy bien! Fui a la playa.
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <div class="flex items-center justify-center gap-3 border-t border-slate-800 px-4 py-3">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-slate-300"><i data-lucide="mic" class="h-4 w-4"></i></span>
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-slate-300"><i data-lucide="video" class="h-4 w-4"></i></span>
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-slate-300"><i data-lucide="monitor-up" class="h-4 w-4"></i></span>
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-slate-300"><i data-lucide="message-square" class="h-4 w-4"></i></span>
+              <span class="flex h-10 w-14 items-center justify-center rounded-full bg-red-600 text-white"><i data-lucide="phone-off" class="h-4 w-4"></i></span>
+            </div>
+          </div>
+
+          <!-- Card flutuante de avaliação -->
+          <div class="absolute -bottom-6 -left-2 hidden items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/90 px-4 py-3 shadow-xl backdrop-blur-md sm:flex lg:-left-8">
+            <div class="flex text-amber-400">
+              <i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i>
+            </div>
+            <span class="text-xs font-medium text-slate-300">Aulas leves e<br />sem medo de errar</span>
+          </div>
+
+          <!-- Card flutuante de método -->
+          <div class="absolute -right-2 -top-5 hidden items-center gap-2 rounded-2xl border border-amber-400/30 bg-slate-900/90 px-4 py-2.5 shadow-xl backdrop-blur-md sm:flex lg:-right-6">
+            <i data-lucide="sparkles" class="h-4 w-4 text-amber-400"></i>
+            <span class="text-xs font-bold text-white">Método Prático</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. BENEFÍCIOS / METODOLOGIA ===================== -->
+    <section id="metodologia" class="relative scroll-mt-20 border-t border-slate-900 py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="text-sm font-bold uppercase tracking-widest text-amber-400">A Metodologia</span>
+          <h2 class="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            Aprender espanhol pode ser leve, prático e rápido
+          </h2>
+          <p class="mt-4 text-slate-400 sm:text-lg">
+            Unindo a didática de professor ao olhar de psicanalista, José trabalha não só a língua,
+            mas também a trava e o medo de falar que impedem tanta gente de evoluir.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Card 1 -->
+          <article class="group rounded-3xl border border-slate-800 bg-slate-900/50 p-7 backdrop-blur-md transition hover:-translate-y-1 hover:border-amber-400/40 hover:bg-slate-900">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl ring-1 ring-amber-400/30">🗣️</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Conversação desde o 1º dia</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Você fala espanhol já na primeira aula. A gramática aparece no contexto, de forma natural, sem listas para decorar.</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="group rounded-3xl border border-slate-800 bg-slate-900/50 p-7 backdrop-blur-md transition hover:-translate-y-1 hover:border-amber-400/40 hover:bg-slate-900">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl ring-1 ring-amber-400/30">🎯</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Foco em Situações Reais</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Viagens, entrevistas, reuniões e negócios. Simulações práticas das conversas que você realmente vai ter.</p>
+          </article>
+          <!-- Card 3 -->
+          <article class="group rounded-3xl border border-slate-800 bg-slate-900/50 p-7 backdrop-blur-md transition hover:-translate-y-1 hover:border-amber-400/40 hover:bg-slate-900">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl ring-1 ring-amber-400/30">💻</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Online e Interativo</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Aulas ao vivo pelo Google Meet ou Zoom, com materiais digitais, áudios e exercícios — de onde você estiver.</p>
+          </article>
+          <!-- Card 4 -->
+          <article class="group rounded-3xl border border-slate-800 bg-slate-900/50 p-7 backdrop-blur-md transition hover:-translate-y-1 hover:border-amber-400/40 hover:bg-slate-900">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl ring-1 ring-amber-400/30">🧠</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Abordagem Personalizada</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Ritmo, conteúdo e objetivos ajustados a você. Um ambiente acolhedor, onde errar faz parte de aprender.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. PARA QUEM É ===================== -->
+    <section id="para-quem" class="relative scroll-mt-20 py-20 sm:py-28">
+      <div class="pointer-events-none absolute left-0 top-1/3 h-[340px] w-[340px] rounded-full bg-amber-500/10 blur-[120px]"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-5 lg:gap-16 lg:px-8">
+        <div class="lg:col-span-2">
+          <span class="text-sm font-bold uppercase tracking-widest text-amber-400">Para quem é</span>
+          <h2 class="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            Essas aulas foram pensadas para você que…
+          </h2>
+          <p class="mt-4 text-slate-400 sm:text-lg">
+            Não importa se você está começando do zero ou quer destravar a conversação:
+            o plano de aulas parte do seu nível e do seu objetivo.
+          </p>
+          <a href="#" data-whatsapp class="mt-8 inline-flex items-center gap-2 font-semibold text-amber-400 transition hover:text-amber-300">
+            Quero saber se é para mim <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </a>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-3 lg:col-span-3">
+          <!-- Carreira -->
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-md">
+            <div class="flex items-center gap-2 text-amber-400">
+              <i data-lucide="briefcase" class="h-5 w-5"></i>
+              <h3 class="font-bold text-white">Carreira</h3>
+            </div>
+            <ul class="mt-5 space-y-3 text-sm text-slate-300">
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Precisa de espanhol rápido para o trabalho</li>
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Vai encarar entrevistas ou reuniões</li>
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Atende clientes da América Latina</li>
+            </ul>
+          </div>
+          <!-- Viagens -->
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-md">
+            <div class="flex items-center gap-2 text-amber-400">
+              <i data-lucide="plane" class="h-5 w-5"></i>
+              <h3 class="font-bold text-white">Viagens</h3>
+            </div>
+            <ul class="mt-5 space-y-3 text-sm text-slate-300">
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Quer viajar com autonomia</li>
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Pretende morar ou estudar fora</li>
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Quer viver a cultura de verdade</li>
+            </ul>
+          </div>
+          <!-- Fluência -->
+          <div class="rounded-3xl border border-amber-400/30 bg-gradient-to-b from-amber-400/10 to-slate-900/50 p-6 backdrop-blur-md">
+            <div class="flex items-center gap-2 text-amber-400">
+              <i data-lucide="messages-square" class="h-5 w-5"></i>
+              <h3 class="font-bold text-white">Fluência</h3>
+            </div>
+            <ul class="mt-5 space-y-3 text-sm text-slate-300">
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Entende, mas trava na hora de falar</li>
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Já tentou apps e não evoluiu</li>
+              <li class="flex gap-2.5"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 shrink-0 text-green-400"></i>Quer conversar com naturalidade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. COMO FUNCIONA ===================== -->
+    <section id="como-funciona" class="scroll-mt-20 border-y border-slate-900 bg-slate-900/30 py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="text-sm font-bold uppercase tracking-widest text-amber-400">Como funciona</span>
+          <h2 class="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            Do primeiro contato à primeira aula em 3 passos
+          </h2>
+          <p class="mt-4 text-slate-400 sm:text-lg">Aulas individuais ou em turma reduzida, sempre ao vivo.</p>
+        </div>
+
+        <ol class="relative mt-16 grid gap-10 md:grid-cols-3 md:gap-6">
+          <!-- Linha conectora (desktop) -->
+          <div class="pointer-events-none absolute left-[16.66%] right-[16.66%] top-8 hidden h-px bg-gradient-to-r from-amber-400/0 via-amber-400/50 to-amber-400/0 md:block"></div>
+
+          <li class="relative text-center">
+            <div class="relative mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-amber-400/40 bg-slate-950 text-amber-400 shadow-[0_0_30px_-5px_rgba(245,158,11,0.5)]">
+              <i data-lucide="calendar-check" class="h-7 w-7"></i>
+              <span class="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-xs font-black text-slate-950">1</span>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-white">Agendamento</h3>
+            <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-slate-400">Chame no WhatsApp, conte seu objetivo e escolha o melhor horário para você.</p>
+          </li>
+
+          <li class="relative text-center">
+            <div class="relative mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-amber-400/40 bg-slate-950 text-amber-400 shadow-[0_0_30px_-5px_rgba(245,158,11,0.5)]">
+              <i data-lucide="clipboard-list" class="h-7 w-7"></i>
+              <span class="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-xs font-black text-slate-950">2</span>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-white">Diagnóstico de Nível</h3>
+            <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-slate-400">Uma conversa rápida para entender seu nível atual e montar um plano sob medida.</p>
+          </li>
+
+          <li class="relative text-center">
+            <div class="relative mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-amber-400/40 bg-slate-950 text-amber-400 shadow-[0_0_30px_-5px_rgba(245,158,11,0.5)]">
+              <i data-lucide="rocket" class="h-7 w-7"></i>
+              <span class="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-xs font-black text-slate-950">3</span>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-white">Início das Aulas</h3>
+            <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-slate-400">Aulas ao vivo, com material incluso e acompanhamento contínuo da sua evolução.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 5. OFERTA / CTA FINAL ===================== -->
+    <section class="py-20 sm:py-28">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-[2rem] border border-amber-400/30 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 px-6 py-14 text-center shadow-2xl sm:px-12 sm:py-20">
+          <div class="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-amber-500/25 blur-[100px]"></div>
+          <div class="pointer-events-none absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-orange-600/20 blur-[100px]"></div>
+
+          <div class="relative">
+            <span class="inline-flex items-center gap-2 rounded-full border border-red-400/30 bg-red-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-red-300">
+              <i data-lucide="flame" class="h-3.5 w-3.5"></i> Vagas limitadas por turma
+            </span>
+
+            <h2 class="mx-auto mt-6 max-w-3xl text-3xl font-black tracking-tight text-white sm:text-5xl">
+              ¿Vamos empezar? Seu espanhol fluente começa com uma mensagem.
+            </h2>
+            <p class="mx-auto mt-5 max-w-2xl text-slate-300 sm:text-lg">
+              As turmas ao vivo são pequenas para garantir atenção individual a cada aluno.
+              Fale agora com o José Durán e garanta seu horário antes que as vagas se esgotem.
+            </p>
+
+            <a href="#" data-whatsapp
+               class="mt-10 inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-green-500 px-8 py-5 text-lg font-extrabold text-white shadow-[0_15px_50px_-10px_rgba(34,197,94,0.8)] transition hover:-translate-y-0.5 hover:bg-green-400 sm:w-auto sm:px-12">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Quero Garantir Minha Vaga
+            </a>
+
+            <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
+              <li class="flex items-center gap-1.5"><i data-lucide="check" class="h-4 w-4 text-green-400"></i>Aulas individuais ou em turma</li>
+              <li class="flex items-center gap-1.5"><i data-lucide="check" class="h-4 w-4 text-green-400"></i>Horários flexíveis</li>
+              <li class="flex items-center gap-1.5"><i data-lucide="check" class="h-4 w-4 text-green-400"></i>Resposta rápida</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 6. FOOTER ===================== -->
+  <footer class="border-t border-slate-900 py-10">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 text-sm text-slate-500 sm:px-6 md:flex-row lg:px-8">
+      <div class="flex items-center gap-2.5">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 text-xs font-black text-slate-950">JD</span>
+        <span>© <span id="year"></span> José Durán · Todos os direitos reservados.</span>
+      </div>
+      <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+        <a href="#metodologia" class="transition hover:text-amber-400">Metodologia</a>
+        <a href="#como-funciona" class="transition hover:text-amber-400">Como funciona</a>
+        <a href="#" data-whatsapp class="transition hover:text-amber-400">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="#" data-whatsapp aria-label="Falar no WhatsApp"
+     class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg shadow-green-900/50 transition hover:scale-110 hover:bg-green-400">
+    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    // ⚙️ CONFIGURAÇÃO — troque pelo número real (DDI + DDD + número, só dígitos)
+    const WHATSAPP_NUMBER = '5500000000000';
+    const WHATSAPP_MESSAGE = 'Olá, José! Vi sua página e quero saber mais sobre as aulas de espanhol ao vivo.';
+
+    const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+    document.querySelectorAll('[data-whatsapp]').forEach((el) => {
+      el.href = waLink;
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    lucide.createIcons();
+  </script>
+</body>
+</html>
